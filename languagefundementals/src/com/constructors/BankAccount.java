@@ -7,17 +7,17 @@ public class BankAccount {
 	double balance;
 	
 	BankAccount(){ 
-		this("");
+		this("unknown");
 	
 	}
 	BankAccount(String accountHolder){
-		this("", 0);
+		this(accountHolder, 0);
 	}
 	BankAccount(String accountHolder,long accountNumber){
-		this("",0,0.0);
+		this(accountHolder,accountNumber,0.0);
 	}
 
-	public BankAccount(String accountHolder, long accountNumber, double balance) {
+	BankAccount(String accountHolder, long accountNumber, double balance) {
 		this.accountHolder = accountHolder;
 		this.accountNumber = accountNumber;
 		this.balance = balance;
@@ -30,9 +30,9 @@ public class BankAccount {
 	}
 	public static void main(String[] args) {
 		System.out.println("main method started!");
-		BankAccount b=new BankAccount("Unknown",0,0.0);
+		BankAccount b=new BankAccount();
 		b.display();
-		BankAccount b1=new BankAccount("Krishna",0,0.0);
+		BankAccount b1=new BankAccount("Krishna");
 		b1.display();
 		BankAccount b2=new BankAccount("Krishna",1223456757,0.0);
 		b2.display();
