@@ -773,5 +773,6 @@ public class ResturantPoc {
 		} while (yn.equalsIgnoreCase("Y"));
 
 		System.out.println("EXIT !!");
+		System.out.println("Thank you! 😊 Visit Again..!");
 	}
 }
