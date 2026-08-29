@@ -31,17 +31,17 @@ public class Matrices {
 					  start++;
 					  end--;
 				  }
+				  if(i==n/2||j==n/2) { 
+						arr[i][j]=arr[i][j]*2;
+					}
 			 }
 		 }
 		 for(int i=0;i<arr.length;i++) {
 			 for(int j=0;j<arr.length;j++) {
-				if(i!=n/2||j!=n/2) { 
-					arr[i][j]=arr[i][j]*2;
-				}
+				 if(i==j) {
+					 arr[i][j]=arr[i][j]*arr[i][j];
+				 }
 			 }
-		 }
-		 for(int i=0;i<arr.length;i++) {
-			 arr[i][i]=arr[i][i]*arr[i][i];
 		 }
 		 System.out.println(Arrays.deepToString(arr));
 		 System.out.println("main method ended");
