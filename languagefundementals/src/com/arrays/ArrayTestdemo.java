@@ -30,7 +30,6 @@ public class ArrayTestdemo {
 			}
 		}
 		System.out.println(Arrays.deepToString(arr));
-
 		System.out.println("main method ended");
 
 	}
