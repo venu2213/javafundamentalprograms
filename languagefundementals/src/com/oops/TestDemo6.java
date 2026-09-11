@@ -22,7 +22,6 @@ class Product {
     }
 }
 
-// Child class - Electronics
 class Electronics extends Product {
     String brand;
 
@@ -45,7 +44,6 @@ class Electronics extends Product {
     }
 }
 
-// Child class - Clothing
 class Clothing extends Product {
     String size;
 
@@ -68,7 +66,6 @@ class Clothing extends Product {
     }
 }
 
-// Child class - Furniture
 class Furniture extends Product {
     String material;
 
