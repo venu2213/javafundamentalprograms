@@ -10,7 +10,6 @@ public class TestDriver9 {
 		 t.markAttendance();
 		 Attendance m=new Manager();
 		 m.markAttendance();
-		 
 		 System.out.println("main method ended");
 
 	}
